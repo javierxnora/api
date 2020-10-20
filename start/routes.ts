@@ -8,6 +8,8 @@ Route.get('/clases', 'ClassesController.index')
 Route.get('/clases/:idNivel', 'ClassesController.show')
 Route.get('/asignaturas/', 'SubjectsController.index')
 Route.get('/asignaturas/:idNivel', 'SubjectsController.show')
+Route.get('/events/', 'EventsController.index')
+
 
 Route.get('health', async ({ response }) => {
   const report = await HealthCheck.getReport()

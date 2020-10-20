@@ -1,8 +1,8 @@
 
 import { BaseModel, belongsTo, BelongsTo, column } from '@ioc:Adonis/Lucid/Orm'
-import Grade from './Grade'
+import Subject from './Subject'
 
-export default class Subject extends BaseModel {
+export default class Evaluation extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
@@ -10,7 +10,6 @@ export default class Subject extends BaseModel {
   public name: string
 
   @column()
-  public gradeId: number
-  @belongsTo(() => Grade)  public grade: BelongsTo<typeof Grade>
-  
+  public subjectId: number
+  @belongsTo(() => Subject)  public subject: BelongsTo<typeof Subject>
 }

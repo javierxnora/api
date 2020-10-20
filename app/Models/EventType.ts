@@ -7,6 +7,4 @@ export default class EventType extends BaseModel {
   @column()
   public name: string
 
-  @column()
-  public enabled: boolean
 }

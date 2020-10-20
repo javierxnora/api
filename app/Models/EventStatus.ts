@@ -4,7 +4,7 @@ export default class EventStatus extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
-  @column({ isPrimary: true })
+  @column()
   public name: string
 
 
